@@ -1,29 +1,43 @@
 # 💰 Expense Tracker
 
-A simple and responsive expense tracker built with **Vue.js** for managing income and expenses and keeping track of the total balance.
+A simple and responsive expense tracker built with **Vue.js** for managing income and expenses and calculating the current balance.
 
 ## ✨ Features
 
-* ➕ Add income and expenses
+* ➕ Add income and expense transactions
+* 📝 Add a description and amount for each transaction
+* 📂 Categorize transactions
+* 💰 Calculate total income automatically
+* 💸 Calculate total expenses automatically
+* 📊 Calculate the current balance
+* 📈 Visualize expenses by category
 * 🗑️ Delete transactions
-* 💰 Calculate total balance automatically
-* 📊 Track expenses by category
-* 📱 Responsive user interface
-* ⚡ Reactive data updates using Vue.js
+* ⚡ Reactive calculations using Vue computed properties
+
+## 📂 Expense Categories
+
+The application includes the following categories:
+
+* 🍔 Food
+* 🚗 Transport
+* 🛍️ Shopping
+* 🧾 Bills
+* 📦 Other
 
 ## 🛠️ Technologies
 
-* Vue.js
+* Vue.js 3
 * JavaScript
 * HTML5
 * CSS3
-* Vue Computed Properties
-* Pinia
-* Chart / Data Visualization
+* Vue Composition API
+* `ref`
+* `computed`
+* Vite
 
-## 📊 Expense Categories
+## 📊 Expense Visualization
 
-The application organizes expenses into categories to make spending easier to understand and track.
+The application groups expenses by category and displays them using a simple visual bar chart. The chart is generated within the Vue application without an external chart library.
 
 ## 🚀 Getting Started
 
@@ -39,11 +53,17 @@ npm install
 npm run dev
 ```
 
-Then open the local URL displayed in your terminal.
+Then open the local URL displayed in the terminal.
 
-## 📁 Project Purpose
+### Build for production
 
-This project was created to practice building a Vue.js application, handling forms, managing application state, performing automatic calculations with computed properties, and displaying expense data visually.
+```bash
+npm run build
+```
+
+## 🎯 Project Purpose
+
+This project was created to practice building a Vue.js application, handling forms, managing reactive data, using computed properties for automatic calculations, and creating a simple data visualization.
 
 ## 👩‍💻 Author
 
